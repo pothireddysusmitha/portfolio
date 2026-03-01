@@ -124,8 +124,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-bottom: 20px;
-    margin-top: 20px;
+   
     transition: 0.3s;
 }
         .btn-style {
@@ -172,6 +171,8 @@ h4{
     width: 330px;
     padding: 20px;
     border-radius: 15px;
+     margin-top: 15px;
+     align-items: center;
 }
      .btn1
      {
@@ -188,16 +189,15 @@ h4{
         background: rgb(202,204,248);
     }   
     .socialinfo-footer {
-        display: flex;
-        width: 350px;
-        height: 30px;
-        border-radius: 30px;
-        padding: 15px;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        margin: auto;
-        margin-top: 20px;
+    display: flex;
+    width: 90%;
+    max-width: 350px;
+    border-radius: 30px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
 }
 h2
 {
@@ -262,12 +262,118 @@ h2
 .social-icon a {
     display: flex;
     align-items: center;
-    text-decoration: none;
-    font-size: 18px;
+    gap: 10px;
+    flex-wrap: wrap;
+    word-break: break-word;
+    text-align: center;
 }
     @media(max-width:768px)
     {
             section{
                 padding:40px 5%;
             }
+           
+             header {
+        padding: 15px 20px;
     }
+
+    .nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #1f1f34;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 20px 0;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav li {
+        margin: 10px 0;
+    }
+     .hamburger {
+         display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+}
+}
+
+@media (max-width: 768px) {
+    .contact {
+    padding: 40px 30px 40px 30px;
+    text-align: center;
+}
+    .cards, .skills {
+    padding: 0px 5%;
+    gap: 30px ;
+    margin: 0px 0; 
+
+}
+.projects{
+    padding: 40px 0px 0px;
+}
+.project_text1, .project_text2 {
+    
+    padding: 0px 20px;
+
+}
+.about-section{
+    padding-top: 0px ;
+
+}
+.skillheading{
+padding: 40px  5% 0px ;
+}
+    .hero {
+        gap:30px;
+padding: 40px 30px;
+}
+    .socialinfo-footer {
+        padding: 0%;
+        margin: 0px auto;
+        width: 95%;
+    }
+
+    .social-icon a {
+        flex-direction: column;
+    }
+
+    #heroimg {
+        width: 250px;
+        height: 250px;
+    }
+
+    .herocontent h1 {
+        font-size: 28px;
+    }
+
+    .herocontent h2 {
+        font-size: 20px;
+    }
+     .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-box {
+        width: 100%;
+    }
+     .expCard {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .expCard ul {
+        padding-left: 20px;
+    }
+}
